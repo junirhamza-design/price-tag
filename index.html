@@ -39,6 +39,20 @@
                 @click="openEditDialog(product)"
                 class="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:border-(--ring) border-(--border) focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] border bg-(--background) shadow-xs hover:bg-(--accent) hover:text-(--accent-foreground) dark:bg-(--input)/30 dark:border-(--input) dark:hover:bg-(--input)/50 h-9 px-4"
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184"
+                  />
+                </svg>
                 Copy
               </button>
               <button
@@ -46,6 +60,20 @@
                 @click="confirmDelete(product)"
                 class="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:border-(--ring) border-(--border) focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] border bg-(--background) shadow-xs hover:bg-(--accent) hover:text-(--accent-foreground) dark:bg-(--input)/30 dark:border-(--input) dark:hover:bg-(--input)/50 h-9 px-4"
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-4.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
                 download
               </button>
             </div>
@@ -54,6 +82,19 @@
               @click="openCreateDialog()"
               class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-(--ring) focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] aria-invalid:ring-(--destructive)/20 dark:aria-invalid:ring-(--destructive)/40 aria-invalid:border-(--destructive) bg-(--primary) text-(--primary-foreground) hover:bg-(--primary)/90 h-9 px-4 py-2 has-[>svg]:px-3"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
               Create
             </button>
           </div>
@@ -130,12 +171,40 @@
                         @click="openEditDialog(product)"
                         class="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:border-(--ring) border-(--border) focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] border bg-(--background) shadow-xs hover:bg-(--accent) hover:text-(--accent-foreground) dark:bg-(--input)/30 dark:border-(--input) dark:hover:bg-(--input)/50 h-9 px-4"
                       >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.7"
+                          stroke="currentColor"
+                          class="size-4.5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+                          />
+                        </svg>
                         Edit
                       </button>
                       <button
                         @click="confirmDelete(product)"
                         class="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-(--destructive) text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:border-(--ring) border-(--border) focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] border bg-(--background) shadow-xs hover:bg-(--accent) hover:text-(--accent-foreground) dark:bg-(--input)/30 dark:border-(--input) dark:hover:bg-(--input)/50 h-9 px-4"
                       >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.7"
+                          stroke="currentColor"
+                          class="size-4.5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                          />
+                        </svg>
                         Delete
                       </button>
                     </div>
@@ -414,7 +483,7 @@
       <!-- Settings Floating Button -->
       <button
         @click="showSettingsDialog = true"
-        class="fixed bottom-6 right-6 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-(--ring) border-zinc-300 focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] aria-invalid:ring-(--destructive)/20 dark:aria-invalid:ring-(--destructive)/40 aria-invalid:border-(--destructive) border bg-(--background) shadow-xs hover:bg-(--accent) hover:text-(--accent-foreground) dark:bg-(--input)/30 dark:border-(--input) dark:hover:bg-(--input)/50 size-11 px-4 py-2 has-[>svg]:px-3"
+        class="fixed bottom-6 right-6 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-(--ring) border-zinc-300 focus-visible:ring-(--ring)/50 focus-visible:ring-[3px] aria-invalid:ring-(--destructive)/20 dark:aria-invalid:ring-(--destructive)/40 aria-invalid:border-(--destructive) border bg-(--background) shadow-xs bg-white hover:bg-(--accent) hover:text-(--accent-foreground) dark:bg-(--input)/30 dark:border-(--input) dark:hover:bg-(--input)/50 size-11 px-4 py-2 has-[>svg]:px-3"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -457,27 +526,49 @@
               Settings
             </h2>
 
-            <div class="flex items-center justify-between mb-6">
-              <label class="text-sm font-medium text-neutral-700">
-                Disable delete confirmation
+            <div
+              class="flex items-center justify-between gap-x-4 sm:col-span-2 flex-row-reverse mb-4"
+            >
+              <div class="flex h-6 items-center">
+                <div
+                  class="group relative inline-flex w-8 shrink-0 rounded-full bg-gray-200 p-px inset-ring inset-ring-gray-900/5 outline-offset-2 outline-neutral-800 transition-colors duration-200 ease-in-out has-checked:bg-neutral-800 has-focus-visible:outline-2"
+                >
+                  <span
+                    class="size-4 rounded-full bg-white shadow-xs ring-1 ring-gray-900/5 transition-transform duration-200 ease-in-out group-has-checked:translate-x-3.5"
+                  ></span>
+                  <input
+                    id="agree-to-policies"
+                    type="checkbox"
+                    name="agree-to-policies"
+                    aria-label="Agree to policies"
+                    class="absolute inset-0 appearance-none focus:outline-hidden"
+                    @change="disableDeleteConfirm = !disableDeleteConfirm"
+                  />
+                </div>
+              </div>
+              <label for="agree-to-policies" class="text-sm/6 text-gray-600">
+                Disable delete confirmation dialog
               </label>
-
-              <button
-                @click="disableDeleteConfirm = !disableDeleteConfirm"
-                class="relative inline-flex h-6 w-11 items-center rounded-full transition"
-                :class="disableDeleteConfirm ? 'bg-(--primary)' : 'bg-neutral-300'"
-              >
-                <span
-                  class="inline-block h-5 w-5 transform bg-white rounded-full transition"
-                  :class="disableDeleteConfirm ? 'translate-x-5' : 'translate-x-1'"
-                ></span>
-              </button>
             </div>
 
             <button
               @click="deleteAllProducts()"
               class="w-full inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-(--ring) focus-visible:ring-[3px] aria-invalid:ring-(--destructive)/20 dark:aria-invalid:ring-(--destructive)/40 aria-invalid:border-(--destructive) bg-(--destructive) text-white hover:bg-(--destructive)/90 focus-visible:ring-(--destructive)/20 dark:focus-visible:ring-(--destructive)/40 dark:bg-(--destructive)/60 h-9 px-4 py-2 has-[>svg]:px-3"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-4.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
               Delete All Products
             </button>
 
@@ -529,14 +620,18 @@
           },
 
           openCreateDialog() {
-            this.createForm = { name: "", mrp: "", arp: "" };
+            this.createForm = {
+              name: "Product ",
+              mrp: "100",
+              arp: "100",
+            };
             this.showCreateDialog = true;
           },
 
           createProduct() {
             this.products.push({
               id: Date.now(),
-              name: this.createForm.name,
+              name: this.createForm.name.trim(),
               mrp: parseFloat(this.createForm.mrp),
               arp: parseFloat(this.createForm.arp),
             });
@@ -593,55 +688,77 @@
           },
 
           copyCSV() {
-            const totalSlots = 12;
+            const perRow = 12;
             const headers = [];
-            const values = [];
 
-            for (let i = 1; i <= totalSlots; i++) {
+            // Create headers
+            for (let i = 1; i <= perRow; i++) {
               headers.push(`productname${i}`, `mrp${i}`, `arp${i}`);
             }
 
-            for (let i = 0; i < totalSlots; i++) {
-              if (i < this.products.length) {
-                const p = this.products[i];
-                values.push(p.name, p.mrp, p.arp);
-              } else {
-                values.push("Dummy Product Name", "XXX", "XXX");
+            const rows = [];
+            let index = 0;
+
+            while (index < this.products.length) {
+              const row = [];
+
+              for (let i = 0; i < perRow; i++) {
+                const p = this.products[index + i];
+
+                if (p) {
+                  row.push(p.name, p.mrp, p.arp);
+                } else {
+                  row.push("Dummy Product Name", "XXX", "XXX");
+                }
               }
+
+              rows.push(row.join(","));
+              index += perRow;
             }
 
-            const csv = headers.join(",") + "\n" + values.join(",");
+            const csv = headers.join(",") + "\n" + rows.join("\n");
+
             navigator.clipboard.writeText(csv);
             alert("CSV copied to clipboard!");
           },
 
           downloadTXT() {
-            const totalSlots = 12;
+            const perRow = 12;
             const headers = [];
-            const values = [];
 
-            for (let i = 1; i <= totalSlots; i++) {
+            // Create headers
+            for (let i = 1; i <= perRow; i++) {
               headers.push(`productname${i}`, `mrp${i}`, `arp${i}`);
             }
 
-            for (let i = 0; i < totalSlots; i++) {
-              if (i < this.products.length) {
-                const p = this.products[i];
-                values.push(p.name, p.mrp, p.arp);
-              } else {
-                values.push("Dummy Product Name", "XXX", "XXX");
+            const rows = [];
+            let index = 0;
+
+            while (index < this.products.length) {
+              const row = [];
+
+              for (let i = 0; i < perRow; i++) {
+                const p = this.products[index + i];
+
+                if (p) {
+                  row.push(p.name, p.mrp, p.arp);
+                } else {
+                  row.push("Dummy Product Name", "XXX", "XXX");
+                }
               }
+
+              rows.push(row.join(","));
+              index += perRow;
             }
 
-            const txt = headers.join(",") + "\n" + values.join(",");
+            const txt = headers.join(",") + "\n" + rows.join("\n");
+
             const blob = new Blob([txt], { type: "text/plain" });
             const url = URL.createObjectURL(blob);
-
             const a = document.createElement("a");
             a.href = url;
             a.download = "products.txt";
             a.click();
-
             URL.revokeObjectURL(url);
           },
         };
